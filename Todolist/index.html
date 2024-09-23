@@ -12,8 +12,7 @@
         <div class="task-list">
             <ul>
                 <li> Operación: Día a día </li>
-                <button id="btn-ocultar" onclick="ocultar()"> <i class="bi bi-plus-square-fill text-blue-500 w-12 h-12" > </i> </button>
-
+                <button id="btn-ocultar" onclick="mostrarFormulario()"> <i class="bi bi-plus-square-fill text-blue-500 w-12 h-12"> </i> </button>
             </ul>
             
             <table>
@@ -29,57 +28,37 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Compra</td>
-                        <td>Ir al supermercado</td>
-                        <td>21/09/2024</td>
-                        <td>11:00am</td>
-                        <td><span class="status pending">Pendiente</span></td>
-                        <td>
-                            <button class="btn edit"><i class="bi bi-pencil-square"></i> </button>
-                            <button class="btn delete"> <i class="bi bi-trash"></i> </button>
-                        </td>
-                    </tr>
+                    <!-- Aquí se generarán dinámicamente las tareas -->
                 </tbody>
             </table>
         </div>
     
         <!-- FORMULARIO -->
         <div class="box">
-            <form class="formulario">
+            <form class="formulario" id="taskForm">
                 <H3>Agregar Nota</H3>
-        
+                <input type="hidden" id="taskId">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre"><br><br>
-        
                 <label for="detalle">Detalle:</label><br>
                 <textarea id="detalle" name="detalle"></textarea><br><br>
-        
                 <label for="fecha">Fecha:</label>
                 <input type="date" id="fecha" name="fecha"><br><br>
-        
                 <label for="hora">Hora:</label>
                 <input type="time" id="hora" name="hora"><br><br>
-        
                 <label for="estado">Estado:</label>
                 <select id="estado" name="estado">
                     <option value="pendiente">Pendiente</option>
                     <option value="en_proceso">En proceso</option>
                     <option value="completado">Completado</option>
                 </select><br><br>
-        
                 <button type="submit">Guardar</button>
             </form>
         </div>
-
     </main>
     <footer>
         <h3>Jesus Elias Diaz Feliz</h3>
     </footer>
-
 </body>
-
 <script src="script.js"></script>
-
 </html>
