@@ -148,6 +148,7 @@ cursor: pointer;
 /* Aqui comienza los estilos del formulario */
 
 .box{
+    position: absolute;
     display: flex;
     margin: auto;
     justify-content: center;

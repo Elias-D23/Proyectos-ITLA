@@ -85,5 +85,5 @@ function eliminarTarea(id) {
     mostrarTareas();
 }
 
-// Cargar las tareas al cargar la página
-//window.onload = mostrarTareas;
+//Cargar las tareas al cargar la página
+window.onload = mostrarTareas;
